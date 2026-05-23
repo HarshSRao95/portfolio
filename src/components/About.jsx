@@ -9,7 +9,7 @@ const About = () => {
     {
       degree: "B.E. Computer Engineering",
       institution: "Pillai College of Engineering",
-      score: "CGPI: 9.1 / 10",
+      score: "CGPI: 9.21 / 10",
       year: "2021 – 2025",
       icon: "bx-graduation-cap"
     },

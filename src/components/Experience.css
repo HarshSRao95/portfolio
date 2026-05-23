@@ -134,6 +134,27 @@
   border-radius: var(--radius-full);
 }
 
+.exp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent-primary);
+  text-decoration: none;
+  padding: 0.4rem 0;
+  transition: gap var(--transition-normal), color var(--transition-normal);
+}
+
+.exp-link:hover {
+  color: var(--accent-secondary);
+  gap: 0.6rem;
+}
+
+.exp-link i {
+  font-size: 1rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .exp-cards {

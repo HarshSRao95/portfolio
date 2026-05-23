@@ -7,12 +7,22 @@ const Experience = () => {
 
   const experiences = [
     {
+      role: "Full Stack Web Development Intern",
+      company: "Maharashtra State Human Rights Commission",
+      location: "Mumbai",
+      duration: "Dec – Apr",
+      durationDays: "150 days",
+      description: "Upgraded the entire MSHRC website to the latest versions and functionalities as a Full Stack Developer intern. Additionally managed social media content, posting updates about events, announcements, and alerts involving MSHRC.",
+      link: "https://www.mshrc.gov.in/",
+      tags: ["Full Stack", "Web Development", "CMS", "Social Media"],
+      icon: "bx-building-house"
+    },
+    {
       role: "Web Development Intern",
       company: "Bhabha Atomic Research Center",
       location: "Trombay",
-      duration: "May – Jul 2025",
+      duration: "May 26 – Jul 10",
       durationDays: "45 days",
-      semester: "Semester 6",
       description: "Developed a Django-based Web Application tailored for Central Nervous System Cancer Patients, focusing on robust backend architecture and an intuitive user interface to support healthcare processes.",
       tags: ["Django", "Python", "PostgreSQL", "Healthcare"],
       icon: "bx-atom"
@@ -21,9 +31,8 @@ const Experience = () => {
       role: "Full Stack Web Development Intern",
       company: "Bharat Intern",
       location: "Virtual",
-      duration: "Jun – Jul 2023",
+      duration: "Jun 10 – Jul 9",
       durationDays: "30 days",
-      semester: "Semester 4",
       description: "Completed multiple full-stack development projects demonstrating proficiency across the entire web development stack.",
       tasks: [
         "Registration Form — HTML, CSS, Node JS, MongoDB",
@@ -84,6 +93,13 @@ const Experience = () => {
                     </li>
                   ))}
                 </ul>
+              )}
+
+              {exp.link && (
+                <a href={exp.link} className="exp-link" target="_blank" rel="noopener noreferrer">
+                  <i className='bx bx-link-external'></i>
+                  <span>View Website</span>
+                </a>
               )}
 
               <div className="exp-tags">
